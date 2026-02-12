@@ -9,7 +9,7 @@
       margin: 0;
       padding: 0;
       background: #fff0f5;
-      color: #333;
+      color: #000; /* all text black */
     }
     section {
       display: none;
@@ -17,15 +17,15 @@
       min-height: 100vh;
     }
     section.active { display: block; }
-    h1 { color: #d6336c; }
-    p { font-size: 18px; line-height: 1.6; }
+    h1 { color: #000; } /* headings black */
+    p { font-size: 18px; line-height: 1.6; color: #000; }
 
     .heart-button {
       background-color: #ff4d6d; border: none; color: white; padding: 20px;
       font-size: 24px; border-radius: 50%; cursor: pointer; transition: transform 0.2s;
     }
     .heart-button:hover { transform: scale(1.2); background-color: #e63950; }
-    .caption { margin-top: 15px; font-size: 18px; color: #d6336c; font-weight: bold; }
+    .caption { margin-top: 15px; font-size: 18px; color: #000; font-weight: bold; }
 
     button {
       margin: 15px; padding: 15px 25px; font-size: 18px;
@@ -41,28 +41,22 @@
     }
     .map-button:hover { transform: scale(1.1); background-color: #e63950; }
 
-    /* Background for options page */
+    /* Backgrounds */
     #options::before {
       content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover; opacity: 0.3; z-index: -1;
     }
-
-    /* Movie night background */
     #movie {
       background: url('movie-background.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      color: #000; /* force black text */
     }
-    #movie h1 { color: gold; }
-
-    /* Surprise adventure background */
     #adventure {
       background: url('adventure-background.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff; /* ensures contrast */
+      color: #000; /* force black text */
     }
-    #adventure h1 { color: #ffeb3b; }
   </style>
 </head>
 <body>
