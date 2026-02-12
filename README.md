@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title>Happy Hug Day ❤️</title>
@@ -44,9 +43,17 @@
     /* Background for options page */
     #options::before {
       content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-      background: url('your-image.jpeg') no-repeat center center fixed;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover; opacity: 0.3; z-index: -1;
     }
+
+    /* Movie night background */
+    #movie {
+      background: url('movie-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    #movie h1 { color: gold; }
   </style>
 </head>
 <body>
@@ -73,11 +80,11 @@
        Please choose what you would like to get served today:</p>
 
     <button onclick="showPage('dinner')">Option 1: Dinner under the stars</button>
-    <button onclick="alert('Movie night 🎬 - Saturday, 14th February, 7 PM, cozy setup at home!')">Option 2: Movie night</button>
+    <button onclick="showPage('movie')">Option 2: Movie night</button>
     <button onclick="alert('Surprise adventure ✨ - Sunday morning, be ready!')">Option 3: Surprise adventure with our company</button>
   </section>
 
-  <!-- Page 3 -->
+  <!-- Page 3A: Dinner Invitation -->
   <section id="dinner">
     <h1>My Dearest Love,</h1>
     <p>
@@ -94,6 +101,38 @@
     <a href="https://share.google/fybSnltHt6ULYX8O8" target="_blank" class="map-button">
       Click here to view the place virtually
     </a>
+  </section>
+
+  <!-- Page 3B: Movie Night Invitation -->
+  <section id="movie">
+    <h1>🎬✨ MOVIE NIGHT GOLDEN INVITATION ✨🎬</h1>
+    <p><strong>Miss Arpita Jena</strong><br>
+       You are cordially invited to a most enchanting evening</p>
+    <p>
+      <strong>Event:</strong> Bara Badhu Screening Premiere<br>
+      <strong>Date:</strong> Saturday, 14th February<br>
+      <strong>Time:</strong> 7:00 PM Sharp<br>
+      <strong>Venue:</strong> Maharaja Picture Palace [Christie 4K], Bhoinagar Basti, Bhoi Nagar, Bhubaneswar, Odisha 751022
+    </p>
+    <p>
+      Congratulations! You have chosen to watch Bara Badhu alongside your absolute favorite person:<br>
+      <strong>Mr. Rudra Sangram Singh 🎭❤️</strong>
+    </p>
+    <p>
+      Cozy setup awaits with premium seats, buttery popcorn, and hearts intertwined under the silver screen glow.
+    </p>
+    <p>
+      <strong>RSVP:</strong> Your presence is non-negotiable, my love.<br>
+      <strong>Dress Code:</strong> Whatever makes your heart sparkle ✨
+    </p>
+    <p>
+      Tonight, the movie stars fade – because you'll outshine them all.
+    </p>
+    <p>
+      With eternal admiration,<br>
+      Your Leading Man<br>
+      Rudra
+    </p>
   </section>
 
   <script>
