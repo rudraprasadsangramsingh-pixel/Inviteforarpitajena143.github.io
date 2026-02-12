@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>Happy Hug Day ❤️</title>
-  <!-- Google Fonts -->
+  <!-- Romantic Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
@@ -22,9 +22,9 @@
     p { font-size: 18px; line-height: 1.6; color: #000; }
 
     /* Romantic font for invitations */
-    .invitation {
+    .invitation h1, .invitation p {
       font-family: 'Great Vibes', cursive;
-      font-size: 24px;
+      font-size: 26px;
       line-height: 1.8;
     }
 
@@ -47,8 +47,8 @@
 </head>
 <body>
 
-  <!-- Background music (will start after click) -->
-  <audio id="bgMusic" loop>
+  <!-- Background music (hidden, starts after click) -->
+  <audio id="bgMusic" loop style="display:none;">
     <source src="happinessinmusic-romantic-jazz-free-480577.mp3" type="audio/mpeg">
   </audio>
 
@@ -175,7 +175,10 @@
     function startJourney() {
       showPage('options');
       // Start music after user interaction (works on mobile)
-      document.getElementById('bgMusic').play();
+      const music = document.getElementById('bgMusic');
+      music.play().catch(err => {
+        console.log("Music play blocked:", err);
+      });
     }
   </script>
 
