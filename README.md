@@ -46,7 +46,7 @@
     /* Background for options page */
     #options::before {
       content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-      background: url('your-image.jpeg') no-repeat center center fixed;
+      background: url(['your-image.jpeg'](https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/WhatsApp%20Image%202026-02-12%20at%2011.46.06%20AM.jpeg)) no-repeat center center fixed;
       background-size: cover; opacity: 0.3; z-index: -1;
     }
   </style>
