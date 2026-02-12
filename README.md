@@ -1,9 +1,7 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Happy Hug Day ❤️</title>
-  <audio autoplay loop>
-    <source src="(https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/happinessinmusic-romantic-jazz-free-480577.mp3)" type="audio/mpeg">
   <style>
     body {
       font-family: 'Georgia', serif;
@@ -18,9 +16,7 @@
       padding: 60px 20px;
       min-height: 100vh;
     }
-    section.active {
-      display: block;
-    }
+    section.active { display: block; }
     h1 { color: #d6336c; }
     p { font-size: 18px; line-height: 1.6; }
 
@@ -48,12 +44,18 @@
     /* Background for options page */
     #options::before {
       content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-      background: url(['your-image.jpeg'](https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/WhatsApp%20Image%202026-02-12%20at%2011.46.06%20AM.jpeg)) no-repeat center center fixed;
+      background: url('your-image.jpeg') no-repeat center center fixed;
       background-size: cover; opacity: 0.3; z-index: -1;
     }
   </style>
 </head>
 <body>
+
+  <!-- Background music starts immediately -->
+  <audio autoplay loop>
+    <source src="happinessinmusic-romantic-jazz-free-480577.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
   <!-- Page 1 -->
   <section id="welcome" class="active">
@@ -73,11 +75,6 @@
     <button onclick="showPage('dinner')">Option 1: Dinner under the stars</button>
     <button onclick="alert('Movie night 🎬 - Saturday, 14th February, 7 PM, cozy setup at home!')">Option 2: Movie night</button>
     <button onclick="alert('Surprise adventure ✨ - Sunday morning, be ready!')">Option 3: Surprise adventure with our company</button>
-
-    
-      
-      
-    
   </section>
 
   <!-- Page 3 -->
@@ -93,7 +90,7 @@
       in utmost elegance to this dreamlike haven, straight from your preferred spot.
     </p>
     <p>Prepare to be swept into romance eternal. 💕</p>
-</audio>
+
     <a href="https://share.google/fybSnltHt6ULYX8O8" target="_blank" class="map-button">
       Click here to view the place virtually
     </a>
