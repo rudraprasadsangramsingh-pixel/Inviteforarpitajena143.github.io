@@ -17,7 +17,7 @@
       min-height: 100vh;
     }
     section.active { display: block; }
-    h1 { color: #000; } /* headings black */
+    h1 { color: #000; }
     p { font-size: 18px; line-height: 1.6; color: #000; }
 
     .heart-button {
@@ -27,35 +27,13 @@
     .heart-button:hover { transform: scale(1.2); background-color: #e63950; }
     .caption { margin-top: 15px; font-size: 18px; color: #000; font-weight: bold; }
 
-    button {
+    button, .map-button, .link-button {
       margin: 15px; padding: 15px 25px; font-size: 18px;
-      background-color: #ff4d6d; color: white; border: none; border-radius: 8px;
-      cursor: pointer; transition: transform 0.2s;
-    }
-    button:hover { transform: scale(1.1); background-color: #e63950; }
-
-    .map-button {
-      margin-top: 30px; padding: 15px 25px; font-size: 18px;
       background-color: #ff4d6d; color: white; border: none; border-radius: 8px;
       cursor: pointer; transition: transform 0.2s; text-decoration: none; display: inline-block;
     }
-    .map-button:hover { transform: scale(1.1); background-color: #e63950; }
-
-    /* Backgrounds */
-    #options::before {
-      content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover; opacity: 0.3; z-index: -1;
-    }
-    #movie {
-      background: url('movie-background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #000; /* force black text */
-    }
-    #adventure {
-      background: url('adventure-background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #000; /* force black text */
+    button:hover, .map-button:hover, .link-button:hover {
+      transform: scale(1.1); background-color: #e63950;
     }
   </style>
 </head>
@@ -136,6 +114,12 @@
       Your Leading Man<br>
       Rudra
     </p>
+
+    <!-- Trailer button -->
+    <a href="https://www.youtube.com/watch?v=JiBjnGMaw2Y" target="_blank" class="link-button">
+      Till then please enjoy the trailer
+    </a>
+    <p>We hope you will enjoy it.</p>
   </section>
 
   <!-- Page 3C: Surprise Adventure Invitation -->
@@ -161,6 +145,11 @@
       Issued by your forever companion,<br>
       <strong>Mr. Rudra Sangram Singh</strong>
     </p>
+
+    <!-- Song button -->
+    <a href="https://www.youtube.com/watch?v=oZ7PnR_ZKRE" target="_blank" class="link-button">
+      Pause! Enjoy the song till the details are being shared by AR& Company
+    </a>
   </section>
 
   <script>
