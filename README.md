@@ -95,9 +95,9 @@
   <section id="dinner" class="invitation">
     <div class="premium-heading">Dinner Under the Stars</div>
     <p>You are hereby highly invited to an evening of enchantment...</p>
-    <div class="label-heading">Date:</div>
+    <div class="label-heading">Date</div>
     <p>14th February – the day our hearts beat as one under the stars.</p>
-    <div class="label-heading">Venue:</div>
+    <div class="label-heading">Venue</div>
     <p>Cabana by Regal, KIIT Rd, Bhubaneswar</p>
     <p>Prepare to be swept into romance eternal. 💕</p>
 
@@ -110,17 +110,17 @@
 
   <!-- Page 3B: Movie Night Invitation -->
   <section id="movie" class="invitation">
-    <div class="premium-heading">🎬✨ Movie Night Golden Invitation ✨🎬</div>
+    <div class="premium-heading">Movie Night Golden Invitation</div>
     <p><strong>Miss Arpita Jena</strong><br>You are cordially invited...</p>
-    <div class="label-heading">Event:</div>
+    <div class="label-heading">Event</div>
     <p>Bara Badhu Screening Premiere</p>
-    <div class="label-heading">Date:</div>
+    <div class="label-heading">Date</div>
     <p>Saturday, 14th February</p>
-    <div class="label-heading">Time:</div>
+    <div class="label-heading">Time</div>
     <p>7:00 PM Sharp</p>
-    <div class="label-heading">Venue:</div>
+    <div class="label-heading">Venue</div>
     <p>Maharaja Picture Palace [Christie 4K], Bhubaneswar</p>
-    <div class="label-heading">RSVP:</div>
+    <div class="label-heading">RSVP</div>
     <p>Your presence is non-negotiable, my love.</p>
     <p>Tonight, the movie stars fade – because you'll outshine them all.</p>
     <p>With eternal admiration,<br>Your Leading Man<br>Rudra</p>
@@ -136,11 +136,11 @@
 
   <!-- Page 3C: Surprise Adventure Invitation -->
   <section id="adventure" class="invitation">
-    <div class="premium-heading">🌟✨ Surprise Adventure Passport ✨🌟</div>
+    <div class="premium-heading">Surprise Adventure Passport</div>
     <p><strong>Dearest Miss Arpita Jena,</strong><br>Your heart's greatest explorer calls...</p>
-    <div class="label-heading">Date:</div>
+    <div class="label-heading">Date</div>
     <p>Sunday Morning (Pack for wonder & wander!)</p>
-    <div class="label-heading">Mission:</div>
+    <div class="label-heading">Mission</div>
     <p>Pack your bags, dreams, and that radiant smile.</p>
     <p>Venue, time, and magical details will be revealed exclusively by AR&Company.</p>
     <p>Adventure awaits. Are you ready, my love?<br>Issued by your forever companion,<br><strong>Mr. Rudra Sangram Singh</strong></p>
