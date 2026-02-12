@@ -1,7 +1,8 @@
-
 <html>
 <head>
   <title>Happy Hug Day ❤️</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Georgia', serif;
@@ -9,7 +10,7 @@
       margin: 0;
       padding: 0;
       background: #fff0f5;
-      color: #000; /* all text black */
+      color: #000;
     }
     section {
       display: none;
@@ -19,6 +20,13 @@
     section.active { display: block; }
     h1 { color: #000; }
     p { font-size: 18px; line-height: 1.6; color: #000; }
+
+    /* Romantic font for invitations */
+    .invitation {
+      font-family: 'Great Vibes', cursive;
+      font-size: 24px;
+      line-height: 1.8;
+    }
 
     .heart-button {
       background-color: #ff4d6d; border: none; color: white; padding: 20px;
@@ -39,17 +47,16 @@
 </head>
 <body>
 
-  <!-- Background music starts immediately -->
-  <audio autoplay loop>
+  <!-- Background music (will start after click) -->
+  <audio id="bgMusic" loop>
     <source src="happinessinmusic-romantic-jazz-free-480577.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
   </audio>
 
   <!-- Page 1 -->
   <section id="welcome" class="active">
     <h1>Happy Hug Day to my prettiest lady, Miss Wonderful!</h1>
     <p>Can't wait to wrap you in the biggest hug. ❤️</p>
-    <button class="heart-button" onclick="showPage('options')">❤️</button>
+    <button class="heart-button" onclick="startJourney()">❤️</button>
     <div class="caption">Adore me Baby!!</div>
   </section>
 
@@ -66,7 +73,7 @@
   </section>
 
   <!-- Page 3A: Dinner Invitation -->
-  <section id="dinner">
+  <section id="dinner" class="invitation">
     <h1>My Dearest Love,</h1>
     <p>
       You are hereby highly invited to an evening of enchantment at <strong>Cabana by Regal</strong>, 
@@ -82,10 +89,12 @@
     <a href="https://share.google/fybSnltHt6ULYX8O8" target="_blank" class="map-button">
       Click here to view the place virtually
     </a>
+    <br><br>
+    <button onclick="showPage('options')">⬅ Back to Options</button>
   </section>
 
   <!-- Page 3B: Movie Night Invitation -->
-  <section id="movie">
+  <section id="movie" class="invitation">
     <h1>🎬✨ MOVIE NIGHT GOLDEN INVITATION ✨🎬</h1>
     <p><strong>Miss Arpita Jena</strong><br>
        You are cordially invited to a most enchanting evening</p>
@@ -116,14 +125,17 @@
     </p>
 
     <!-- Trailer button -->
+    <p>Till then please enjoy the trailer:</p>
     <a href="https://www.youtube.com/watch?v=JiBjnGMaw2Y" target="_blank" class="link-button">
-      Till then please enjoy the trailer
+      Watch Trailer 🎬
     </a>
     <p>We hope you will enjoy it.</p>
+    <br>
+    <button onclick="showPage('options')">⬅ Back to Options</button>
   </section>
 
   <!-- Page 3C: Surprise Adventure Invitation -->
-  <section id="adventure">
+  <section id="adventure" class="invitation">
     <h1>🌟✨ SURPRISE ADVENTURE PASSPORT ✨🌟</h1>
     <p><strong>Dearest Miss Arpita Jena,</strong><br>
        Your heart's greatest explorer calls...</p>
@@ -147,15 +159,23 @@
     </p>
 
     <!-- Song button -->
+    <p>Pause! Enjoy the song till the details are being shared by AR& Company:</p>
     <a href="https://www.youtube.com/watch?v=oZ7PnR_ZKRE" target="_blank" class="link-button">
-      Pause! Enjoy the song till the details are being shared by AR& Company
+      Play Song 🎵
     </a>
+    <br><br>
+    <button onclick="showPage('options')">⬅ Back to Options</button>
   </section>
 
   <script>
     function showPage(pageId) {
       document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
       document.getElementById(pageId).classList.add('active');
+    }
+    function startJourney() {
+      showPage('options');
+      // Start music after user interaction (works on mobile)
+      document.getElementById('bgMusic').play();
     }
   </script>
 
