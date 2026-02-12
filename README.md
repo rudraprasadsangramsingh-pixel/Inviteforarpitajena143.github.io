@@ -1,3 +1,4 @@
+
 <html>
 <head>
   <title>Happy Hug Day ❤️</title>
@@ -54,6 +55,14 @@
       color: #fff;
     }
     #movie h1 { color: gold; }
+
+    /* Surprise adventure background */
+    #adventure {
+      background: url('adventure-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff; /* ensures contrast */
+    }
+    #adventure h1 { color: #ffeb3b; }
   </style>
 </head>
 <body>
@@ -81,7 +90,7 @@
 
     <button onclick="showPage('dinner')">Option 1: Dinner under the stars</button>
     <button onclick="showPage('movie')">Option 2: Movie night</button>
-    <button onclick="alert('Surprise adventure ✨ - Sunday morning, be ready!')">Option 3: Surprise adventure with our company</button>
+    <button onclick="showPage('adventure')">Option 3: Surprise adventure with our company</button>
   </section>
 
   <!-- Page 3A: Dinner Invitation -->
@@ -132,6 +141,31 @@
       With eternal admiration,<br>
       Your Leading Man<br>
       Rudra
+    </p>
+  </section>
+
+  <!-- Page 3C: Surprise Adventure Invitation -->
+  <section id="adventure">
+    <h1>🌟✨ SURPRISE ADVENTURE PASSPORT ✨🌟</h1>
+    <p><strong>Dearest Miss Arpita Jena,</strong><br>
+       Your heart's greatest explorer calls...</p>
+    <p>
+      You are officially summoned for a Secret Sunday Sunrise Adventure!<br>
+      <strong>Date:</strong> Sunday Morning (Pack for wonder & wander!)<br>
+      <strong>Mission:</strong> Pack your bags, dreams, and that radiant smile.
+    </p>
+    <p>
+      Venue, time, and magical details will be revealed exclusively by AR&Company.<br>
+      Stay tuned to your heart's compass – the call is coming.
+    </p>
+    <p>
+      We wish you all the very best for this journey of a lifetime,<br>
+      where every step leads closer to forever. 💫❤️
+    </p>
+    <p>
+      Adventure awaits. Are you ready, my love?<br>
+      Issued by your forever companion,<br>
+      <strong>Mr. Rudra Sangram Singh</strong>
     </p>
   </section>
 
