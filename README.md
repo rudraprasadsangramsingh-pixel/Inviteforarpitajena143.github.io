@@ -54,18 +54,4 @@
 <body>
 
   <h1>🎂 Happy Birthday to mo Salu Guddu ❤️</h1>
-  <p>My world shines brighter today because of you 💖</p>
-
-  <!-- Album Section -->
-  <div class="album">
-    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/1.jpg" alt="Memory 1">
-    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/2.jpg" alt="Memory 2">
-    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/3.jpg" alt="Memory 3">
-    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/4.jpg" alt="Memory 4">
-    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/5.jpg" alt="Memory 5">
-    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/6.jpg" alt="Memory 6">
-    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/7.jpg" alt="Memory 7">
-  </div>
-
-</body>
-</html>
+  <p>My world shines brighter
