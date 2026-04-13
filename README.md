@@ -6,25 +6,33 @@
     body {
       margin: 0;
       padding: 0;
-      background: #fff200; /* Bright yellow background */
+      /* Premium golden gradient background */
+      background: linear-gradient(135deg, #fff8dc, #ffd700);
       font-family: 'Great Vibes', cursive;
       color: #d6336c;
       text-align: center;
+      /* Add subtle repeating pattern */
+      background-image: radial-gradient(#ffe066 10%, transparent 11%);
+      background-size: 40px 40px;
     }
+
     h1 {
       font-size: 64px;
       margin: 30px 0 10px;
       animation: glow 2s ease-in-out infinite alternate;
     }
+
     p {
       font-size: 32px;
       color: #000;
       margin: 0 0 40px;
     }
+
     @keyframes glow {
       from { text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff4d6d; }
       to { text-shadow: 0 0 20px #ff99ac, 0 0 30px #ff99ac; }
     }
+
     .album {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -33,13 +41,15 @@
       max-width: 1200px;
       margin: auto;
     }
+
     .album img {
       width: 100%;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       transition: transform 0.3s;
     }
+
     .album img:hover {
       transform: scale(1.05);
     }
