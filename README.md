@@ -49,29 +49,22 @@
     .album img:hover {
       transform: scale(1.05);
     }
-
-    .heart {
-      font-size: 60px;
-      animation: pulse 1.5s infinite;
-      margin-top: 20px;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); color: #ff4d6d; }
-      50% { transform: scale(1.3); color: #e63950; }
-      100% { transform: scale(1); color: #ff4d6d; }
-    }
   </style>
 </head>
 <body>
 
-  <audio autoplay loop>
-    <source src="birthday-melody.mp3" type="audio/mpeg">
-  </audio>
-
   <h1>🎂 Happy Birthday to mo Salu Guddu ❤️</h1>
   <p>My world shines brighter today because of you 💖</p>
-  <div class="heart">❤️</div>
 
   <!-- Album Section -->
   <div class="album">
+    <!-- Replace these with your actual image paths or online links -->
+    <img src="pic1.jpg" alt="Memory 1">
+    <img src="pic2.jpg" alt="Memory 2">
+    <img src="pic3.jpg" alt="Memory 3">
+    <img src="pic4.jpg" alt="Memory 4">
+    <img src="pic5.jpg" alt="Memory 5">
+  </div>
+
+</body>
+</html>
