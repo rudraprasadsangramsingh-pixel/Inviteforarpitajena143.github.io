@@ -58,12 +58,13 @@
 
   <!-- Album Section -->
   <div class="album">
-    <!-- Replace these with your actual image paths or online links -->
-    <img src="pic1.jpg" alt="Memory 1">
-    <img src="pic2.jpg" alt="Memory 2">
-    <img src="pic3.jpg" alt="Memory 3">
-    <img src="pic4.jpg" alt="Memory 4">
-    <img src="pic5.jpg" alt="Memory 5">
+    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/1.jpg" alt="Memory 1">
+    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/2.jpg" alt="Memory 2">
+    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/3.jpg" alt="Memory 3">
+    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/4.jpg" alt="Memory 4">
+    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/5.jpg" alt="Memory 5">
+    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/6.jpg" alt="Memory 6">
+    <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FOLDER/7.jpg" alt="Memory 7">
   </div>
 
 </body>
