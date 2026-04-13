@@ -6,25 +6,30 @@
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      background: #fff200; /* Bright yellow background */
       font-family: 'Great Vibes', cursive;
       color: #d6336c;
       text-align: center;
+      overflow: hidden;
     }
+
     h1 {
       font-size: 64px;
       margin: 30px 0 10px;
       animation: glow 2s ease-in-out infinite alternate;
     }
+
     p {
       font-size: 32px;
       color: #000;
       margin: 0 0 40px;
     }
+
     @keyframes glow {
       from { text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff4d6d; }
       to { text-shadow: 0 0 20px #ff99ac, 0 0 30px #ff99ac; }
     }
+
     .album {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -32,7 +37,10 @@
       padding: 20px;
       max-width: 1200px;
       margin: auto;
+      position: relative;
+      z-index: 1;
     }
+
     .album img {
       width: 100%;
       height: auto;
@@ -40,27 +48,66 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       transition: transform 0.3s;
     }
+
     .album img:hover {
       transform: scale(1.05);
     }
+
+    /* Balloon animation */
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 80px;
+      height: 100px;
+      border-radius: 50%;
+      animation: floatUp 12s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 0.9; }
+      100% { transform: translateY(-120vh) scale(1.2); opacity: 0; }
+    }
+
+    /* Different balloon colors and positions */
+    .balloon:nth-child(1) { left: 10%; background: #ff4d6d; animation-duration: 12s; }
+    .balloon:nth-child(2) { left: 25%; background: #00c3ff; animation-duration: 15s; }
+    .balloon:nth-child(3) { left: 40%; background: #ff9900; animation-duration: 10s; }
+    .balloon:nth-child(4) { left: 60%; background: #33cc33; animation-duration: 14s; }
+    .balloon:nth-child(5) { left: 75%; background: #9933ff; animation-duration: 11s; }
+    .balloon:nth-child(6) { left: 90%; background: #ff66cc; animation-duration: 13s; }
   </style>
 </head>
 <body>
 
+  <!-- Background song -->
+  <audio autoplay loop>
+    <source src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/10.mp3" type="audio/mpeg">
+  </audio>
+
   <h1>🎂 Happy Birthday to mo Salu Guddu ❤️</h1>
   <p>My world shines brighter today because of you 💖</p>
 
+  <!-- Album Section -->
   <div class="album">
-    <img src="https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/1.jpeg?raw=true" alt="Memory 1">
-    <img src="https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/2.jpeg?raw=true" alt="Memory 2">
-    <img src="https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/3.jpeg?raw=true" alt="Memory 3">
-    <img src="https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/4.jpeg?raw=true" alt="Memory 4">
-    <img src="https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/5.jpeg?raw=true" alt="Memory 5">
-    <img src="https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/6.jpeg?raw=true" alt="Memory 6">
-    <img src="https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/7.jpeg?raw=true" alt="Memory 7">
-    <img src="https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/8.jpeg?raw=true" alt="Memory 8">
-    <img src="https://github.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/blob/main/9.jpeg?raw=true" alt="Memory 9">
+    <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/1.jpeg" alt="Memory 1">
+    <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/2.jpeg" alt="Memory 2">
+    <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/3.jpeg" alt="Memory 3">
+    <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/4.jpeg" alt="Memory 4">
+    <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/5.jpeg" alt="Memory 5">
+    <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/6.jpeg" alt="Memory 6">
+    <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/7.jpeg" alt="Memory 7">
+    <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/8.jpeg" alt="Memory 8">
+    <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/9.jpeg" alt="Memory 9">
   </div>
+
+  <!-- Balloons -->
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
 
 </body>
 </html>
