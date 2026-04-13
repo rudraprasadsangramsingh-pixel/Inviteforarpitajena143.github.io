@@ -6,12 +6,11 @@
     body {
       margin: 0;
       padding: 0;
-      /* Premium golden gradient background */
+      /* Premium golden gradient with subtle pattern */
       background: linear-gradient(135deg, #fff8dc, #ffd700);
       font-family: 'Great Vibes', cursive;
       color: #d6336c;
       text-align: center;
-      /* Add subtle repeating pattern */
       background-image: radial-gradient(#ffe066 10%, transparent 11%);
       background-size: 40px 40px;
     }
@@ -53,17 +52,34 @@
     .album img:hover {
       transform: scale(1.05);
     }
+
+    /* Play button styling */
+    #playButton {
+      background: #d6336c;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      font-family: 'Great Vibes', cursive;
+    }
+    #playButton:hover {
+      background: #ff4d6d;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Background song -->
-  <audio autoplay loop>
-    <source src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/10.mp3" type="audio/mpeg">
-  </audio>
-
   <h1>🎂 Happy Birthday to mo Salu Guddu ❤️</h1>
   <p>My world shines brighter today because of you 💖</p>
+
+  <!-- Play Music Button -->
+  <button id="playButton">▶ Play Music</button>
+  <audio id="bgMusic" loop>
+    <source src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/10.mp3" type="audio/mpeg">
+  </audio>
 
   <!-- Album Section -->
   <div class="album">
@@ -77,6 +93,15 @@
     <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/8.jpeg" alt="Memory 8">
     <img src="https://raw.githubusercontent.com/rudraprasadsangramsingh-pixel/Inviteforarpitajena143.github.io/main/9.jpeg" alt="Memory 9">
   </div>
+
+  <script>
+    const playButton = document.getElementById('playButton');
+    const bgMusic = document.getElementById('bgMusic');
+    playButton.addEventListener('click', () => {
+      bgMusic.play();
+      playButton.style.display = 'none'; // hide button after playing
+    });
+  </script>
 
 </body>
 </html>
